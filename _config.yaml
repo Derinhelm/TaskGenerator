@@ -1,0 +1,8 @@
+# Для разрешения Stepik и других сайтов
+csp:
+  default-src: "'self'"
+  frame-ancestors: 
+    - "'self'"
+    - "https://stepik.org"
+    - "https://*.stepik.org"  # для всех поддоменов Stepik
+
