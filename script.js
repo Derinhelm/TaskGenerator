@@ -1,6 +1,6 @@
 async function getText() {
     const origin = document.getElementById('numberInput').value;
-    const num = ((origin % 3) || 3) - 1;
+    const num = ((origin % 3) || 3);
     
     const response = await fetch('texts.txt');
     const text = await response.text();
@@ -8,7 +8,7 @@ async function getText() {
     
     for (let line of lines) {
         if (line.startsWith('Вариант ' + num + '.')) {
-            document.getElementById('result').textContent = line;
+            document.getElementById('result').innerHTML = line.replace(/\n/g, '<br>');;
             return;
         }
     }
