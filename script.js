@@ -7,7 +7,7 @@ async function getText() {
     const lines = text.split('\n');
     
     for (let line of lines) {
-        if (line.startsWith(num + '.')) {
+        if (line.startsWith('Вариант ' + num + '.')) {
             document.getElementById('result').textContent = line;
             return;
         }
