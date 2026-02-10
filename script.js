@@ -8,7 +8,7 @@ async function getText() {
     const lines = text.split('\n');
     
     for (let line of lines) {
-        if (line.includes('Вариант ' + num + '. ДЗ 1. Задача 1.')) {
+        if (line.includes('Вариант ' + num + '. ДЗ ' + task + '. Задача ' + num + '.')) {
             document.getElementById('result').innerHTML = line.replace(/\\n/g, '<br>');
             return;
         }
