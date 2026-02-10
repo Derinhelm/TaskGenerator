@@ -1,7 +1,7 @@
 async function getText() {
     const origin = document.getElementById('numberInput').value;
-    const num = (origin % 5)
-    if (num === 0) num = 5;
+    const num = (origin % 3)
+    if (num === 0) num = 3;
     num = num - 1;
     
     const response = await fetch('texts.txt');
