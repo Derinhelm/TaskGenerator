@@ -2,7 +2,12 @@ async function getText() {
     const variant = document.getElementById('variant').value;
     const hw = document.getElementById('hw').value;
     const task = document.getElementById('task').value;
-    const num = ((variant % 3) || 3);
+    let num;
+    if (hw === 1) {
+        num = (variant % 3) || 3;
+    } else {
+        num = (variant % 8) || 8;
+    }
     
     const response = await fetch('texts.txt');
     const text = await response.text();
