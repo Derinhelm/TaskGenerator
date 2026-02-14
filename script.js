@@ -6,7 +6,7 @@ async function getText() {
     if (hw === 1) {
         num = (variant % 3) || 3;
     } else {
-        num = (variant % 8) || 8;
+        num = (variant % 6) || 6;
     }
     
     const response = await fetch('texts.txt');
