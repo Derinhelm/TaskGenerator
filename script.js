@@ -5,7 +5,7 @@ async function getText() {
     let num;
     if (hw === 1) {
         num = (variant % 3) || 3;
-    } elif (hw === 2) {
+    } else if (hw === 2) {
         num = (variant % 6) || 6;
     } else {
         num = (variant % 36) || 36;
