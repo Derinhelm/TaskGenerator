@@ -5,8 +5,10 @@ async function getText() {
     let num;
     if (hw === 1) {
         num = (variant % 3) || 3;
-    } else {
+    } elif (hw === 2) {
         num = (variant % 6) || 6;
+    } else {
+        num = (variant % 36) || 36;
     }
     
     const response = await fetch('texts.txt');
