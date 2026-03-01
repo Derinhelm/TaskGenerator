@@ -7,8 +7,10 @@ async function getText() {
         num = (variant % 3) || 3;
     } else if (hw === 2) {
         num = (variant % 6) || 6;
-    } else {
+    } else if (hw === 3) {
         num = (variant % 36) || 36;
+    } else {
+        num = (variant % 34) || 34;
     }
     
     const response = await fetch('texts.txt');
