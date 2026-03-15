@@ -11,6 +11,8 @@ async function getText() {
         num = (variant % 36) || 36;
     } else if (hw === 4) {
         num = (variant % 33) || 33;
+    } else if (hw === 5) {
+        num = (variant % 35) || 35;
     } else {
         num = (variant % 35) || 35;
     }
