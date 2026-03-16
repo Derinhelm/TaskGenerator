@@ -3,15 +3,19 @@ async function getText() {
     const hw = document.getElementById('hw').value;
     const task = document.getElementById('task').value;
     let num;
-    if (hw === 1) {
+    if (hw === "1") {
         num = (variant % 3) || 3;
-    } else if (hw === 2) {
+    } else if (hw === "2") {
         num = (variant % 6) || 6;
-    } else if (hw === 3) {
+    } else if (hw === "3") {
         num = (variant % 36) || 36;
-    } else if (hw === 4) {
+    } else if (hw === "4") {
         num = (variant % 33) || 33;
-    } else if (hw === 5) {
+    } else if (hw === "5") {
+        num = (variant % 35) || 35;
+    } else if (hw === "6" && task === "1") {
+        num = (variant % 18) || 18;
+    } else if (hw === "6" && task === "2") {
         num = (variant % 35) || 35;
     } else {
         num = (variant % 35) || 35;
