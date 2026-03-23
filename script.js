@@ -17,8 +17,8 @@ async function getText() {
         num = (variant % 18) || 18;
     } else if (hw === "6" && task === "2") {
         num = (variant % 35) || 35;
-    } else {
-        num = (variant % 35) || 35;
+    } else if (hw === "7"){
+        num = (variant % 33) || 33;
     }
     
     const response = await fetch('texts.txt');
